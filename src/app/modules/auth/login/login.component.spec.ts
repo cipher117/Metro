@@ -62,7 +62,7 @@ describe('LoginComponent', () => {
         ReactiveFormsModule,
         FormsModule,
         HttpClientTestingModule,
-        RouterModule.forRoot(fakeRoutes),
+        RouterModule.forRoot(fakeRoutes, { relativeLinkResolution: 'legacy' }),
         TranslateModule.forRoot(),
       ],
       declarations: [LoginComponent],

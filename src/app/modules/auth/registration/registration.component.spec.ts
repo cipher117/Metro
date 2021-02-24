@@ -49,7 +49,7 @@ describe('RegistrationComponent', () => {
         ReactiveFormsModule,
         FormsModule,
         HttpClientTestingModule,
-        RouterModule.forRoot(fakeRoutes),
+        RouterModule.forRoot(fakeRoutes, { relativeLinkResolution: 'legacy' }),
       ],
       providers: [
         {

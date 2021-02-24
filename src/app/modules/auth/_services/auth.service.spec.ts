@@ -24,7 +24,7 @@ describe('AuthService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       providers: [AuthService],
-      imports: [HttpClientTestingModule, RouterModule.forRoot(fakeRoutes)],
+      imports: [HttpClientTestingModule, RouterModule.forRoot(fakeRoutes, { relativeLinkResolution: 'legacy' })],
     });
     // We inject our service (which imports the HttpClient) and the Test Controller
     httpTestingController = TestBed.inject(HttpTestingController);
